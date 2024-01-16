@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SUDBpmsD/093S6PDeHOpD11aSRCF1p0PctMMaEx4AEUWegfX0LyS3fdNxpo/GBO5oUu1mkLqrocV0jQd19iS0Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CD16\\Desktop\\Triggers_RLG\\Triggers_RLG\\Triggers_RLG.iOS\\Triggers_RLG.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CD16\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\CD16\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\CD16\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

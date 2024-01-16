@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Triggers_RLG"
+             x:Class="Triggers_RLG.MainPage"
+             xmlns:triggers="clr-namespace:Triggers_RLG;assembly=Triggers_RLG">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Style.Triggers>
+                    <Trigger TargetType="Entry"
+                         Property="IsFocused" Value="True">
+                        <Setter Property="BackgroundColor" Value="Yellow" />
+                        <Setter Property="TextColor" Value="White"/>
+                        <!-- multiple Setters elements are allowed -->
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Entry Placeholder="name"/>
+
+        <Button Text            ="Click here"
+                BackgroundColor ="#A569BD"
+                TextColor       ="White">
+            <Button.Triggers>
+                <EventTrigger Event="Clicked">
+                    <local:ChangeColor />
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+
+        <DatePicker>
+            <DatePicker.Triggers>
+                <Trigger TargetType="DatePicker" Property="DatePicker.IsFocused" Value="True">
+                    <Setter Property="BackgroundColor" Value="Aqua"/>
+                </Trigger>
+            </DatePicker.Triggers>
+        </DatePicker>
+
+        <Slider
+             x:Name="SliderTriggers"
+             Minimum="0"
+             Maximum="100"
+             Value="50">
+            <Slider.Triggers>
+                <EventTrigger
+                     Event="ValueChanged">
+                    <triggers:SliderColorTrigger />
+                </EventTrigger>
+            </Slider.Triggers>
+        </Slider>
+    </StackLayout>
+    
+</ContentPage>
